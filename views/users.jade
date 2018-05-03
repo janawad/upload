@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1=data
+  form(action='/register', method='post')
+      input(type='text', name='name', value='')
+      input(type='text', name='mname', value='')
+      input(type='text', name='lname', value='')
+      input(type='text', name='standard', value='')
+      input(type='text', name='age', value='')
+      input(type='text', name='email', value='')
+      input(type='text', name='mobile', value='')
+      input(type='password', name='password', value='')
+      input(type='submit', value='PUT')

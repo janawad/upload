@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  table
+    for users in userlist
+        tr
+        td= users.id
+        td
+           img(src="/uploads/"+users.note)
+        td= users.id
+           h1= users.file_name
